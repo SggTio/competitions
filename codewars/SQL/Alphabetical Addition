@@ -1,0 +1,14 @@
+## Your task is to add up letters to one letter.
+
+In SQL, you will be given a table letters, with a string column letter. Return the sum of the letters in a column letter.
+Notes:
+
+    Letters will always be lowercase.
+    Letters can overflow (see second to last example of the description)
+    If no letters are given, the function should return 'z'
+
+#SOLUTION:
+
+SELECT COALESCE (CHR (CAST (( SUM (ascii(letter) - 96) - 1)%26 as INT) + 97), 'z')
+as letter
+from letters;
