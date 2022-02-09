@@ -1,4 +1,4 @@
-In baseball, the batting average is a simple and most common way to measure a hitter's performace. Batting average is calculated by taking all the players hits and dividing it by their number of at_bats, and it is usually displayed as a 3 digit decimal (i.e. 0.300).
+/* In baseball, the batting average is a simple and most common way to measure a hitter's performace. Batting average is calculated by taking all the players hits and dividing it by their number of at_bats, and it is usually displayed as a 3 digit decimal (i.e. 0.300).
 
 Given a yankees table with the following schema,
 
@@ -31,7 +31,7 @@ Expected Output Table
 -batting_average STRING
 
 
-#SOLUTION:
+#SOLUTION: */
 
 SELECT *
 FROM (

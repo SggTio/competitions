@@ -1,4 +1,4 @@
-## Your task is to add up letters to one letter.
+/* ## Your task is to add up letters to one letter.
 
 In SQL, you will be given a table letters, with a string column letter. Return the sum of the letters in a column letter.
 Notes:
@@ -7,7 +7,7 @@ Notes:
     Letters can overflow (see second to last example of the description)
     If no letters are given, the function should return 'z'
 
-#SOLUTION:
+#SOLUTION: */
 
 SELECT COALESCE (CHR (CAST (( SUM (ascii(letter) - 96) - 1)%26 as INT) + 97), 'z')
 as letter
