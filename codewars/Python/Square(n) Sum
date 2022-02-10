@@ -1,0 +1,9 @@
+"""Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+#Solution: """
+
+def square_sum(numbers):
+    square = []
+    for n in numbers:
+        square.append(n**2)
+    return sum(square)
